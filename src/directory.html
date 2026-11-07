@@ -2,10 +2,27 @@
 layout: base.njk
 title: "Directory"
 hidePageTitle: true
+fullWidthSections: true
 permalink: "/directory/"
 ---
+<div class="page-section">
+<div class="container main-content page-section-inner">
 <h1>Directory</h1>
 <p class="tagline">Lorem ipsum dolor sit amet.</p>
 <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
 
+<div class="page-section page-section--gray">
+<div class="container main-content page-section-inner">
+{% set directoryGroups = people.directoryGroups.slice(0, 2) %}
 {% include "layouts/profiles/people-directory.njk" %}
+</div>
+</div>
+
+<div class="page-section">
+<div class="container main-content page-section-inner">
+{% set directoryGroups = people.directoryGroups.slice(2) %}
+{% include "layouts/profiles/people-directory.njk" %}
+</div>
+</div>
