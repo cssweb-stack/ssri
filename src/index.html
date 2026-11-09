@@ -5,11 +5,10 @@ hidePageTitle: true
 fullWidthSections: true
 permalink: /
 ---
-<div class="container">
-<div class="row content-sidebar gx-3 gx-lg-5">
-<div class="col-12 col-lg-9">
 <div class="page-section">
-<div class="main-content page-section-inner">
+<div class="container content-section">
+<div class="row content-sidebar gy-4 gx-0 gx-sm-5 gx-lg-5">
+<div class="col-12 col-lg-9">
 <h1>Social Science Research Institute</h1>
 <p class="intro">The Social Science Research Institute (SSRI) conducts and supports interdisciplinary, applied research that addresses critical social, behavioral, economic, and environmental problems, primarily in Hawaiʻi and the Asia Pacific region. As the sponsored research division of the College of Social Sciences, SSRI also provides administrative support for pre and post-award activities related to extramural research and training grants.</p>
 
@@ -18,22 +17,17 @@ permalink: /
 <h2>Research</h2>
 <p>SSRI conducts and supports interdisciplinary, applied <a href="{{ '/research/' | url }}">research</a> that addresses critical social, behavioral, economic, and environmental problems, primarily in Hawaiʻi and the Asia Pacific region.</p>
 </div>
+<aside class="col-12 col-lg-3 sidebar-resources" aria-label="Research resources">
+{% from "layouts/content/graphic-callout.njk" import graphicCallout %}
+<div class="row sidebar-resources-grid gx-0 gx-sm-5 gx-lg-5">
+<div class="col-12 col-sm-6 col-lg-12">
+{{ graphicCallout("https://hawaii.kualibuild.com/app/builder/app/622fe94ecdc8337890fea5b4/run", "/media/units/ssri/travel-award.svg", "CSS Travel Award for Professional Development in Research", "(UH login required)") }}
 </div>
-</div>
-<aside class="col-12 col-lg-3 main-content sidebar-resources" aria-label="Research resources">
-<div class="sidebar-resources-grid">
-<div>
-<a href="https://hawaii.kualibuild.com/app/builder/app/622fe94ecdc8337890fea5b4/run">
-<img class="img-fluid w-50 d-block mb-3" src="{{ '/media/units/ssri/travel-award.svg' | url }}" alt="" width="800" height="800">
-CSS Travel Award for Professional Development in Research</a>
-<p class="mb-0">(UH login required)</p>
-</div>
-<div>
-<a href="https://lookerstudio.google.com/reporting/3608bb1f-144f-463b-bcea-00fbf39fdfbc/page/p_m3uaggdjvc?s=vDHTIBnbeCM">
-<img class="img-fluid w-50 d-block mb-3" src="{{ '/media/units/ssri/funding-levels.svg' | url }}" alt="" width="800" height="800">
-College/SSRI Funding Levels</a>
+<div class="col-12 col-sm-6 col-lg-12">
+{{ graphicCallout("https://lookerstudio.google.com/reporting/3608bb1f-144f-463b-bcea-00fbf39fdfbc/page/p_m3uaggdjvc?s=vDHTIBnbeCM", "/media/units/ssri/funding-levels.svg", "College/SSRI Funding Levels") }}
 </div>
 </div>
 </aside>
+</div>
 </div>
 </div>

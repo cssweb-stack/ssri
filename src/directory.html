@@ -6,22 +6,34 @@ fullWidthSections: true
 permalink: "/directory/"
 ---
 <div class="page-section">
-<div class="container main-content page-section-inner">
+<div class="container content-section">
+<div class="row gx-0 gx-sm-5 gx-lg-5">
+<div class="col-12">
 <h1>Directory</h1>
-<p class="intro-nbrd">Provided below is a comprehensive list of SSRI faculty and staff, their roles, and contact information.</p>
+<p class="intro">Provided below is a comprehensive list of SSRI faculty and staff, their roles, and contact information.</p>
+</div>
+</div>
 </div>
 </div>
 
 <div class="page-section page-section--gray">
-<div class="container main-content page-section-inner">
+<div class="container content-section">
+<div class="row gx-0 gx-sm-5 gx-lg-5">
+<div class="col-12">
 {% set directoryGroups = people.directoryGroups.slice(0, 2) %}
 {% include "layouts/profiles/people-directory.njk" %}
 </div>
 </div>
+</div>
+</div>
 
 <div class="page-section">
-<div class="container main-content page-section-inner">
+<div class="container content-section">
+<div class="row gx-0 gx-sm-5 gx-lg-5">
+<div class="col-12">
 {% set directoryGroups = people.directoryGroups.slice(2) %}
 {% include "layouts/profiles/people-directory.njk" %}
+</div>
+</div>
 </div>
 </div>
