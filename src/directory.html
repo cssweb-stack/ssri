@@ -7,7 +7,7 @@ description: "Find SSRI faculty and staff at the University of Hawaiʻi at Māno
 ---
 <div class="page-section">
 <div class="container content-section">
-<div class="row gx-0 gx-sm-5 gx-lg-5">
+<div class="row grid-one">
 <div class="col-12">
 <h1>Directory</h1>
 <p>Find SSRI faculty and staff, their roles, and contact information below.</p>
@@ -17,7 +17,7 @@ description: "Find SSRI faculty and staff at the University of Hawaiʻi at Māno
 </div>
 <div class="page-section page-section--gray">
 <div class="container content-section">
-<div class="row gx-0 gx-sm-5 gx-lg-5">
+<div class="row grid-one">
 <div class="col-12">
 {% set directoryGroups = people.directoryGroups.slice(0, 2) %}
 {% include "layouts/profiles/people-directory.njk" %}
@@ -27,7 +27,7 @@ description: "Find SSRI faculty and staff at the University of Hawaiʻi at Māno
 </div>
 <div class="page-section">
 <div class="container content-section">
-<div class="row gx-0 gx-sm-5 gx-lg-5">
+<div class="row grid-one">
 <div class="col-12">
 {% set directoryGroups = people.directoryGroups.slice(2) %}
 {% include "layouts/profiles/people-directory.njk" %}
